@@ -37,6 +37,7 @@ Each instruction section includes clear applicability markers showing which proj
 - Build and test automation
 - Code quality standards
 - Security best practices
+- External file access permissions and safety
 - Jupyter notebook guidelines
 
 ## Usage
@@ -138,6 +139,7 @@ Copy this template to your project's `log.md` file:
   - [ ] Error Handling
   - [ ] Performance Considerations
   - [ ] Security Best Practices
+  - [ ] File Access Outside Workspace (when explicitly permitted)
   - [ ] Using Jupyter Notebooks (if applicable)
 - **Instructions Skipped**: [List with reasoning]
 ```

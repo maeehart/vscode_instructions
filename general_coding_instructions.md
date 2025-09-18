@@ -190,6 +190,31 @@ Copy this template to your log.md file when starting a project:
 - Use secure coding practices appropriate for the language and domain.
 - Keep dependencies updated to avoid known vulnerabilities.
 
+## File Access Outside Workspace
+**Applicability**: All Projects (when explicitly permitted)
+- **NEVER access files outside the workspace without explicit permission**.
+- **Permission Requirements**:
+  - **Read Permission**: Must be explicitly granted with specific file paths
+  - **Write Permission**: Must be explicitly granted separately from read permission
+  - **Default**: No access to files outside workspace
+- **Permission Validation**:
+  - If only read permission is given, you are **FORBIDDEN** to modify the file
+  - If write permission is not explicitly granted, treat as read-only
+  - Always confirm permission scope before any file operation
+- **VSCode Integration**:
+  - When given permission to access a file, open it in the VSCode editor
+  - Use VSCode's file editing tools for reading and writing
+  - This makes the file more accessible and visible during work
+- **Documentation Requirements**:
+  - Document all external file access in the project log
+  - Record the permission level granted (read-only vs read-write)
+  - Note the purpose and outcome of external file operations
+- **Safety Guidelines**:
+  - Always use absolute paths when accessing external files
+  - Verify file exists before attempting access
+  - Handle file access errors gracefully
+  - Never assume file permissions or modify without explicit write permission
+
 # Using Jupyter Notebooks
 **Applicability**: Jupyter Notebooks/Data Analysis Projects
 - Jupyter notebooks should have all the import statements in the first cell.

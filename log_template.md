@@ -13,8 +13,15 @@
   - [ ] Error Handling
   - [ ] Performance Considerations
   - [ ] Security Best Practices
+  - [ ] File Access Outside Workspace (when explicitly permitted)
   - [ ] Using Jupyter Notebooks (if applicable)
 - **Instructions Skipped**: [List with reasoning]
+
+## External File Access Permissions
+- **Read Permissions Granted**: [List specific files/paths with read access]
+- **Write Permissions Granted**: [List specific files/paths with write access]
+- **Access Purpose**: [Explain why external file access was needed]
+- **Operations Performed**: [Document what was done with external files]
 
 ## Current Project State
 [Describe the current state of the project when starting or resuming work]

@@ -72,6 +72,11 @@ Add to your global VSCode settings (Ctrl/Cmd + Shift + P → "Preferences: Open 
 1. **File referencing**: Always include the instruction file path in your prompts
 2. **Context management**: Ensure the assistant can access the instruction files
 3. **Regular reminders**: Periodically remind the assistant about applicable instruction sections
+4. **External file permissions**: When requesting access to files outside the workspace:
+   - Be explicit about read vs write permissions needed
+   - Provide specific file paths
+   - Explain the purpose of external file access
+   - Request that files be opened in VSCode editor when accessed
 
 ## VSCode Extensions for Instruction Following
 
