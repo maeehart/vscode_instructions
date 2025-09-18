@@ -224,3 +224,5 @@ Copy this template to your log.md file when starting a project:
 - If we are comparing different approaches, the different approaches should be in separate cells of the notebook and should follow each other as identically as possible.
 Finally, if comparing different appproaches, the results should be compared in a separate cell at the end of the notebook.
 - Use tests should be as minimal as possible, concentrating on the main functionality.
+- Do not create additional debug cells without explicit permission.
+- Never use on ASCII characters in printouts. Use only text and numbers. Ask to remove characters that are not normal text or numbers.
