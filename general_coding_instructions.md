@@ -226,3 +226,6 @@ Finally, if comparing different appproaches, the results should be compared in a
 - Use tests should be as minimal as possible, concentrating on the main functionality.
 - Do not create additional debug cells without explicit permission.
 - Never use on ASCII characters in printouts. Use only text and numbers. Ask to remove characters that are not normal text or numbers.
+- Jupyter Notebooks need to run from the beginning to end and provide a consistent picture of what is happening. There should not be cells that do not contribute to the full picture. Remove cells that are extra.
+- Aim to have a minimal number of cells. For example in a kernel benchmark notebook, the cells should be just one for imports, one for helper functions, one for data creation, one for each kernel to be tested, one for performance result visualization and summarisation, and one for accuracy result visualization and summarisation. 
+- Do not add any conclusions yourself to the notebooks on whether an error is acceptable or not or whether the speed up is great or not. The notebook should just show the results  
