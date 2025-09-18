@@ -9,6 +9,8 @@ This repository contains structured coding instructions that help ensure consist
 ## Contents
 
 - `general_coding_instructions.md` - Complete set of coding instructions with applicability guidelines
+- `VSCODE_SETUP.md` - Detailed guide for integrating these instructions with VSCode
+- `log_template.md` - Template for project development logs
 
 ## Project Types Covered
 
@@ -53,12 +55,70 @@ Each instruction section includes clear applicability markers showing which proj
 
 ## Getting Started
 
-When starting a new project:
+## Quick VSCode Setup
+
+**For immediate use with VSCode and AI assistants:**
+
+1. **Clone this repository**:
+   ```bash
+   cd ~/dev
+   git clone https://github.com/maeehart/vscode_instructions.git
+   ```
+
+2. **Add to VSCode settings** (`settings.json`):
+   ```json
+   {
+     "copilot.context.additionalFiles": [
+       "~/dev/vscode_instructions/*.md",
+       ".github/instructions/*.md"
+     ]
+   }
+   ```
+
+3. **In your project**, create a reference:
+   ```bash
+   mkdir -p .github/instructions
+   ln -s ~/dev/vscode_instructions/general_coding_instructions.md .github/instructions/
+   ```
+
+4. **Copy log template**:
+   ```bash
+   cp ~/dev/vscode_instructions/log_template.md ./log.md
+   ```
+
+**📖 For detailed setup instructions, see [VSCODE_SETUP.md](VSCODE_SETUP.md)**
+
+### Initial Project Setup
+
+### Initial Project Setup
+
+When starting a new project with these instructions:
 
 1. **Assess Project Type**: Determine which category your project falls into
-2. **Document Applicability**: Copy the log template and check applicable instructions
-3. **Set Up Logging**: Create `log.md` file for tracking changes and progress
-4. **Follow Guidelines**: Apply relevant instructions throughout development
+2. **Set Up Instructions**: Choose one of the VSCode integration methods above
+3. **Create Log File**: Set up `log.md` for tracking changes and progress
+4. **Document Applicability**: Use the log template to check applicable instructions
+5. **Configure VSCode**: Ensure your editor can access and reference the instructions
+6. **Follow Guidelines**: Apply relevant instructions throughout development
+
+### VSCode Workflow Integration
+
+#### For AI Assistant Users:
+1. **Reference instructions** in your prompts: "Please follow the coding instructions in `.github/instructions/general_coding_instructions.md`"
+2. **Context inclusion**: Ensure your AI assistant can access the instructions file
+3. **Regular reviews**: Periodically check that generated code follows the applicable guidelines
+
+#### For Manual Development:
+1. **Use as checklist**: Review relevant sections before starting new features
+2. **Code review reference**: Check against applicable guidelines during reviews
+3. **Team alignment**: Ensure all team members are familiar with applicable instructions
+
+#### Recommended VSCode Extensions:
+- **Markdown All in One**: For editing instruction files
+- **GitLens**: For following version control best practices
+- **Todo Tree**: For tracking todos in log files
+- **Bracket Pair Colorizer**: For code organization
+- **Error Lens**: For immediate error feedback
 
 ### Log Template
 
